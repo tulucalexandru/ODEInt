@@ -1,0 +1,43 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Conan: Install Dependencies",
+      "type": "shell",
+      "command": "conan install . --profile=.conan/profiles/macos-debug --build=missing",
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "CMake: Configure Preset",
+      "type": "shell",
+      "command": "cmake --preset conan-debug",
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "problemMatcher": [],
+      "dependsOn": [
+        "Conan: Install Dependencies"
+      ]
+    },
+    {
+      "label": "CMake: Build (Incremental)",
+      "type": "shell",
+      "command": "cmake --build --preset conan-debug",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "icon": {
+        "id": "tools"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    }
+  ]
+}
