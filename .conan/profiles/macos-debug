@@ -1,6 +1,5 @@
 [settings]
 arch=armv8
-build_type=Release
 compiler=apple-clang
 compiler.cppstd=gnu17
 compiler.libcxx=libc++
@@ -10,3 +9,4 @@ build_type=Debug
 
 [conf]
 tools.build:cxxflags=["-g"]
+tools.cmake.cmaketoolchain:generator=Ninja
