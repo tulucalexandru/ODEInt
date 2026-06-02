@@ -42,3 +42,11 @@ This repository includes a `.vscode/tasks.json` configuration.
 ## License
 
 This project is licensed under the terms of the MIT License. See the [LICENSE](LICENSE) file for details.
+
+========================================================================
+Third-Party Components Included in this Project:
+
+This software contains third-party components under separate licenses:
+1. autodiff library (located in include/autodiff/)
+   Licensed under the MIT License. Copyright (c) 2018-2026 autodiff authors.
+========================================================================
