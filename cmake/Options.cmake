@@ -1,0 +1,1 @@
+set(BUILD_TESTING ON CACHE BOOL "Build tests")

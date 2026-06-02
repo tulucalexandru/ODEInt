@@ -38,6 +38,18 @@
       "problemMatcher": [
         "$gcc"
       ]
+    },
+    {
+      "label": "CTest: Execute unit tests",
+      "type": "shell",
+      "command": "ctest  --preset conan-debug",
+      "group": {
+        "kind": "test",
+        "isDefault": false
+      },
+      "icon": {
+        "id": "tools"
+      }
     }
   ]
 }
